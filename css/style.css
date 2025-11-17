@@ -1,0 +1,36 @@
+* {
+    font-family: 'Calibri'
+}
+
+body {
+    color: red;
+    background-color: #f5b4b4;
+}
+
+h1 {
+    color: blue;
+    background-color: #c9d1ff;
+}
+
+#p2 {
+    color: purple;
+    background-color: #e0b4f5;
+}   
+
+p {
+    color: green;
+    background-color: #b4f5b4;
+}
+.parrafo {
+    color: orange;
+    background-color: #f5e1b4;
+}
+
+a:hover {
+    color: black;
+}
+
+#p2::first-letter {
+    font-size: 200%;
+    color: red
+}
