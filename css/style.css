@@ -2,8 +2,15 @@
     font-family: 'Calibri'
 }
 
+:root {
+    --main-color: #e81a1a;
+    --secondary-color: #2ecc71;
+}
+
+
+
 body {
-    color: red;
+    color: var(--main-color);
     background-color: #f5b4b4;
 }
 
@@ -32,5 +39,5 @@ a:hover {
 
 #p2::first-letter {
     font-size: 200%;
-    color: red
+    color:var(--main-color)
 }
