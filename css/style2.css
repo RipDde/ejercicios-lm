@@ -1,11 +1,18 @@
+:root{
+    --main-color: #4240e3;
+    --secondary-color: #07073b;
+    --accent-color: red;
+    --verdecito: #2ecc71;
+}
+
 div {
 
 
-    color: blue;
+    color: var(--secondary-color);
 
     p {
 
-        color: red;
+        color: var(--accent-color);
 
 
     }
@@ -14,6 +21,6 @@ div {
 
 p {
 
-    color: green;
+    color: var(--verdecito);
 
 }
