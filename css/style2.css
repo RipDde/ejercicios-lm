@@ -1,26 +1,47 @@
-:root{
+:root {
     --main-color: #4240e3;
     --secondary-color: #07073b;
     --accent-color: red;
     --verdecito: #2ecc71;
+    --black-standard: #000000;
 }
 
 div {
 
-
+    width: 200px;
+    height: 100px;
+    background-color: antiquewhite;
     color: var(--secondary-color);
 
     p {
-
         color: var(--accent-color);
-
-
     }
 
 }
 
 p {
-
     color: var(--verdecito);
+    font-size: 1em;
+}
 
+#caja {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(137, 132, 132);
+}
+
+
+#caja2{
+    width: 50vw;
+    height: 25vh;
+    
+}
+
+footer {
+    background-color: var(--black-standard);
+    color: white;
+   
+}
+main {
+    min-height: 90vh;
 }
