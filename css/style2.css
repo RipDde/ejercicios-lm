@@ -34,6 +34,9 @@ p {
 #caja2{
     width: 50vw;
     height: 25vh;
+    /*background: linear-gradient(45deg, #cacedb, #2ecc71, #4240e3);*/
+    /*background: radial-gradient(circle, #ff57ff, #4240e3, #afafbd);*/
+    background: conic-gradient(from 90deg, #ce872a, #411a4100, #2ecc71, #4240e3, #ce872a);
     
 }
 
@@ -44,5 +47,5 @@ footer {
 }
 
 main {
-    min-height: 90vh;
+    min-height: 85vh;
 }
