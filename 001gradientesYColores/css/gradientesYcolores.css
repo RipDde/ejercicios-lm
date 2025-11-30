@@ -1,17 +1,58 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    background: linear-gradient(to bottom, #80deea, #e0f7fa00);
+    background-repeat: no-repeat;
+    font-family: calibri; arial; san-serif;
+
 }
-.caja caja1 {
-    width: 50vw;
-    height: 25vh;
-    background-color: red);
-    
+
+.contenedor {
+    text-align: center;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    color: whitesmoke;
+    background-color: black;
+    margin: 20px;
+    font-size: 1em;/*este lo podríamos quitar ya que el tamaño por defecto es 16px, que es lo mismo*/
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 200px;
+    display: inline-block;
+}
+
+.caja1 {
+    background-color: red;
+}
+
+.caja2 {
+    background-color: rgb(96, 163, 96);
+}
+
+.caja3 {
+    background: linear-gradient(to left, #ff9100, #ffcc00);
+}
+
+.caja4 {
+    background: radial-gradient(circle, #2500f9, #60baff 70%);
+}
+
+.caja5 {
+    background: linear-gradient(to right, #00ffd9, #60baff, #0037ff);
+}
+
+.caja6 {
+    background: linear-gradient(135deg, #ff00d4, #2b6aff);
+}
+
+.caja7 {
+    background: radial-gradient(circle, #ffffff, #ffd971 40%, #62cdff 80%);
+}
+
+.caja8 {
+    background: radial-gradient(ellipse at bottom left, #ff0000, #ffff00 45%, #3333ff);
+}
+.caja9 {
+    background: conic-gradient(from 45deg, #9eedac, #4efe4e, #00b61b, #079200);
 }
