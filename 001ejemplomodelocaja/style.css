@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Calibri, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    color: whitesmoke;
+    padding: 1em;
+
+
+    h1 {
+        background-color: chartreuse;
+        padding: 0.5em;
+        text-align: center;
+
+    }
+
+    ul {
+
+        display: flex;
+
+        li {
+
+            list-style: none;
+
+        }
+    }
+
+
+}
