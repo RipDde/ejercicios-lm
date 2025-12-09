@@ -14,19 +14,10 @@ header {
         background-color: chartreuse;
         padding: 0.5em;
         text-align: center;
-
+        border: 2px solid black;
+        border-width: 5px;
+ 
     }
-
-    ul {
-
-        display: flex;
-
-        li {
-
-            list-style: none;
-
-        }
+    p{
+        background-color: lightgray;
     }
-
-
-}
