@@ -1,7 +1,8 @@
 body{
     padding: 0px;
     margin: 0px;
-    border: none;
+    border: solid;
+    border-color: red; 
 }
 p{
     margin:0px;
