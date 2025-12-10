@@ -3,6 +3,7 @@ body{
     margin: 10px;
     border: solid;
     border-color: red; 
+    outline-style: dotted;
 }
 p{
     margin:0px;
