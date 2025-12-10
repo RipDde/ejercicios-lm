@@ -1,10 +1,10 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: Calibri, sans-serif;
-    background-image: url(zenitsu.jpg);
+    font-family: "Roboto", Calibri, sans-serif;
+    /*background-image: url(zenitsu.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;*/
  }
 header {
     background-color: #4CAF50;
@@ -37,9 +37,18 @@ header {
 }
 
     main{
-        min-height: 200vh;
+        min-height: 100vh;
+        background-image: url(zenitsu.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: padding-box;
+        border: 20px solid whitesmoke;
+        padding: 20px;
+        }
+    a{
+        text-decoration: none; /*Para quitar las decoraciones*/
     }
-    
+
     footer{
         background-color: orange
     }
