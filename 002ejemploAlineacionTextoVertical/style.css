@@ -32,12 +32,19 @@ p{
     font-style:italic
     
 }
+
+#p2 {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
 #p3 {
-    font-variant: small-caps /*versalitas*/
+    font-variant: small-caps /*versalitas*/;
+    text-indent: 70px;
 }
 #p4 {
     font-weight: 600;
     font-style:oblique; /*no se aprecia la diferencia con italic, es muy sutil*/
+    text-shadow: 4px 4px 2px gray;
 }
 
 .parrafo1 {
