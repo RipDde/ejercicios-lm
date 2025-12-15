@@ -1,0 +1,27 @@
+body{margin: 0;
+}
+
+table{
+    height: 200px;
+    border: 4px solid black;
+    font-family: Calibri, roboto, sans-serif;
+    padding: 5px;
+    background-color: rgb(227, 227, 227);
+
+    td{
+        border: 2px solid rgb(240, 144, 0);
+        background-color: rgb(255, 233, 192)
+        
+    }
+    .arriba{
+        vertical-align: top;
+    }
+    
+    .abajo{
+        vertical-align: bottom;
+    }
+
+    .en_medio{
+        vertical-align: middle;
+    }
+}
