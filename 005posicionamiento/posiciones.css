@@ -17,7 +17,10 @@
     height: 100px;
     position: relative;
     right: 10px;
-    margin: auto; /*esto quiere decir que el espacio que haya en cualquier lugar me lo reparta y quede en el centro*/
+    margin: auto; /*esto quiere decir que el espacio que haya en
+    cualquier lugar me lo reparta y quede en el centro*/
+    z-index: 20; /*como un 3d, cuanto mayor sea el número más cerca
+    de nosotros está, es como el eje z*/
 }
 
 #caja2 {
@@ -45,7 +48,7 @@
     height: 100px;
     position: relative;
     top: 10px;
-    
+
 }
 
 #caja5 {
