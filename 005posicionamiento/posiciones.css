@@ -1,0 +1,68 @@
+#contenedor {
+    width: 500px;
+    height: 600px;
+    background-color: lightgray;
+    /*overflow: auto;*/
+    /*display: flex;
+    flex-wrap: wrap o nowrap;*/
+    margin: auto;
+    /*justify-content: center;
+    align-items: center;
+    text-align: center; todo esto es lo que sabemos para centrar*/
+}
+
+#caja1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: 10px;
+    margin: auto; /*esto quiere decir que el espacio que haya en cualquier lugar me lo reparta y quede en el centro*/
+}
+
+#caja2 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 10px;
+    float: left;
+    margin: auto;
+}
+
+#caja3 {
+    background-color: rgb(200, 255, 0);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 10px;
+    margin: auto;
+}
+
+#caja4 {
+    background-color: rgb(109, 15, 172);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    
+}
+
+#caja5 {
+    background-color: rgb(255, 170, 13);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: -30px;
+    float: right;
+    margin: auto;
+}
+
+#caja6 {
+    background-color: rgba(8, 255, 61, 0.61);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: -30px;
+    margin: auto;
+}
