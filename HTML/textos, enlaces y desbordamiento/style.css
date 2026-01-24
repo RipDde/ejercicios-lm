@@ -1,26 +1,29 @@
-*{
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin:0;
+    margin: 0;
 }
 
-h2{
+h2 {
     margin-top: 10px;
     font-style: italic;
 }
 
-p{
+p {
     margin: 10px 10px 10px;
     text-decoration: underline;
+    /*subrayado*/
     word-spacing: 10px;
     text-transform: capitalize;
+    /*Que cada palabra empiece por mayúsculas*/
 }
 
-.container{
-    padding:10px;
-    width:200px;
+.container {
+    padding: 10px;
+    width: 200px;
     height: 120px;
     white-space: nowrap;
     border: 2px solid;
     border-color: black;
     overflow: auto;
+    /*depende qué imagen queremos hacer, si la 1 o la 2, quitamos o ponemos esta propiedad*/
 }
