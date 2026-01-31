@@ -1,6 +1,79 @@
-@media screen and (min-width: 800px) {
-    body {
-        background-color: aqua;
-    }
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+    margin: 0;
+    
+}
+
+#container {
+    min-height: 110vh;
+    padding: 20px;
+    background-color: rgb(232, 232, 232);
+}
+
+#websiteTitle {
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(255, 202, 87);
+    text-align: center;
+}
+
+#navigationBar {
+    background-color: rgb(252, 224, 147);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: large;
+    color: black;
+
+    a {
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+section {
+    float: left;
+  
+}
+
+#lateralBar {
+        right: -20px;
+    background-color: rgb(255, 245, 206);
+    float: right;
+    margin: 20px;
+
+    figcaption {
+        text-align: center;
+        font-style: italic;
+    }
+}
+
+
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+#finalBar {
+    clear: both;
+
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(252, 224, 147);
+    margin: 0;
+    padding: 10px;  
+}
+
+@media (max-width: 768px) {
+    div#container {
+        background-color: rgb(254, 152, 111);
+    }
+    
 }
