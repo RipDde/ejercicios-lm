@@ -1,0 +1,9 @@
+#contenedor {
+    /* Rejilla de paginación */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 125px 150px;
+    /* Formateo */
+    width: 800px;
+    border: 1px solid #000;
+}

@@ -1,0 +1,19 @@
+p {
+    margin: 0;
+    border: 1px solid #000;
+}
+
+#contenedor {
+    /* Rejilla de paginación */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*Una fracción o «fraction» (1fr)
+    es una parte de una fila entera.
+    Así, si se divide tu Grid en 3x4,
+    es decir,1fr = ¼ o 25 %.*/
+    row-gap: 10px;    /* hueco entre filas */
+    column-gap: 20px; /* hueco entre columnas */
+    /* Formateo */
+    width: 800px;
+    border: 1px solid #000;
+}
