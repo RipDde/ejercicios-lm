@@ -1,0 +1,141 @@
+/* MOBILE FIRST */
+:root {
+    --bg-yellow: #ffeb3b;
+    --bg-red: #f44336;
+    --bg-blue: #3621f3;
+    --bg-black: #0e0202;
+    --bg-white: #fbfbfb;
+    --bg-orange: #ff9800;
+    --bg-green: #4caf50;
+}
+
+* {
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--bg-black);
+}
+
+
+#contenedor {
+    /* grid */
+
+    display: grid;
+    /* grid-template-columns: 1fr; */
+
+    grid-template-areas:
+        "rojo"
+        "naranja"
+        "azul1"
+        "amarillo"
+        "bauhaus"
+        "blanco"
+        "azul2"
+        "verde";
+    gap: 1em;
+    margin: 1em;
+    padding-top: 10px;
+    background-color: var(--bg-black);
+}
+
+#rojo {
+    grid-area: rojo;
+    background-color: var(--bg-red);
+    height: 60px;
+}
+
+#naranja {
+    grid-area: naranja;
+    background-color: var(--bg-orange);
+    height: 60px;
+}
+
+#azul1 {
+    grid-area: azul1;
+    background-color: var(--bg-blue);
+    height: 60px;
+}
+
+#amarillo {
+    grid-area: amarillo;
+    background-color: var(--bg-yellow);
+    height: 60px;
+}
+
+#bauhaus {
+
+    grid-area: bauhaus;
+    background-color: var(--bg-white);
+    text-align: center;
+
+    h1 {
+        font-size: 75px;
+    }
+
+    p {
+        font-size: small;
+        margin: 10px;
+        padding: 10px 20px;
+    }
+}
+
+#blanco {
+    grid-area: blanco;
+    background-color: var(--bg-white);
+    height: 60px;
+}
+
+#azul2 {
+    grid-area: azul2;
+    background-color: var(--bg-blue);
+    height: 60px;
+}
+
+#verde {
+    grid-area: verde;
+    background-color: var(--bg-green);
+    height: 60px;
+}
+
+/* PARA TABLET */
+
+@media only screen and (min-width:768px) {
+
+    #contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "azul1 azul1 azul1"
+            "bauhaus bauhaus bauhaus"
+            "blanco azul2 amarillo"
+            "rojo naranja naranja"
+            "verde naranja naranja"
+            "verde naranja naranja";
+    }
+
+
+    #azul1,
+    #azul2,
+    #blanco,
+    #amarillo {
+        height: 100px;
+    }
+
+    #rojo {
+        height: 150px;
+    }
+
+    #naranja {
+        height: 500px;
+    }
+
+    #verde {
+        height: 334px;
+    }
+
+    #bauhaus {
+
+        text-align: right;
+        padding-right: 20px;
+    }
+}
