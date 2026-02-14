@@ -139,3 +139,42 @@ body {
         padding-right: 20px;
     }
 }
+
+/* PARA DESKTOP */
+
+@media only screen and (min-width:1024px) {
+
+ #contenedor{
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "naranja rojo rojo azul1  azul1  azul1"
+      "amarillo rojo rojo bauhaus bauhaus bauhaus"
+      "amarillo rojo rojo bauhaus bauhaus bauhaus"
+      "amarillo rojo rojo blanco  azul2   verde";
+  }
+
+
+    #rojo {
+        height: 682px;
+    }
+
+    #amarillo {
+        height: 516px;
+    }
+
+    #naranja {
+        height: 150px;
+    }
+
+    #bauhaus {
+        margin-top: -50px;
+        height: 450px;
+        p{
+           margin-right: -15px;
+        }
+    }
+
+    #verde {
+        height: 100px;
+    }
+}
