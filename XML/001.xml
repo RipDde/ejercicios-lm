@@ -1,0 +1,15 @@
+<personas>
+    <persona>
+        <name>John Doe</name>
+        <age>30</age>
+        <occupation>Software Engineer</occupation>
+        <male/>
+    </persona>
+
+    <persona>
+        <name>Jane Smith</name>
+        <age>28</age>
+        <occupation>Graphic Designer</occupation>
+        <female/>
+    </persona>
+</personas>
