@@ -1,15 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <personas>
-    <persona>
+    <persona dni="12345678A" gender="male">
         <name>John Doe</name>
         <age>30</age>
         <occupation>Software Engineer</occupation>
-        <male/>
     </persona>
-
     <persona>
         <name>Jane Smith</name>
         <age>28</age>
         <occupation>Graphic Designer</occupation>
-        <female/>
+        <female />
     </persona>
 </personas>
