@@ -1,48 +1,97 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #cae1f4, #88f5d8);
+  background: linear-gradient(to right, rgb(85, 152, 85), rgb(169, 169, 169));
   margin: 0;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, rgb(85, 152, 85), rgb(169, 169, 169));
+  margin: 0;
+}
+
+/* BARRA SUPERIOR */
+.topbar {
+  background: linear-gradient(90deg, #0f2f1f, #1f4f3a);
+  color: white;
+  padding: 20px 0;
+  border-bottom: 3px solid black;
+}
+
+.topbar-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topbar-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.topbar-right {
+  display: flex;
+  gap: 15px;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
 .card {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 3px solid #000000;
 }
+
 button {
   padding: 10px;
   width: 100%;
   margin-top: 8px;
   border-radius: 5px;
-  border: 1px solid #6800cf;
+  border: 1px solid #000000;
   cursor: pointer;
   background: white;
   text-align: left;
 }
+
 button:hover {
-  background: linear-gradient(to right, #6800cf, #6702ff);
+  background: #2a5922;;
 }
+
 /* CONTENEDOR PRINCIPAL */
 .test-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 30px auto 0 auto;
 }
+
 
 /* TÍTULO PRINCIPAL */
 .test-title {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-}
-
-/* TARJETA DE PREGUNTA */
-.card {
-  background: white;
-  padding: 16px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
 }
 
 /* TÍTULO DE PREGUNTA */
@@ -53,23 +102,50 @@ button:hover {
 
 /* BOTÓN DE RESPUESTA */
 .answer-btn {
-  padding: 10px;
+  position: relative;
+  padding: 18px 20px;
+  padding-left: 52px;
   width: 100%;
-  margin-top: 8px;
-  border-radius: 5px;
-  border: 1px solid #999;
+  margin-top: 12px;
+  border-radius: 18px;
+  border: 1px solid #d6d6d6;
   cursor: pointer;
-  background: white;
+  background: #f8f8f8;
   text-align: left;
+  transition: all 0.2s ease;
+  font-size: 16px;
+}
+
+.answer-btn::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 1.8px solid #0b321a;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
 }
 
 .answer-btn:hover {
-  background: #eee;
+  background: #f1f1f1;
+  border-color: #bfc7c1;
 }
 
 /* CUANDO UNA RESPUESTA ESTÁ SELECCIONADA */
+.answer-selected::before {
+  border-color: #2e4337;
+  background:
+    radial-gradient(circle at center, #2e4337 0 4px, white 5px 100%);
+}
+
 .answer-selected {
-  background: #eee !important;
+  background: #e8eae9 !important;
+  border: 2px solid #98a39c !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
 }
 
 /* RESPUESTA CORRECTA TRAS CORRECCIÓN */
@@ -87,12 +163,21 @@ button:hover {
 
 /* BOTÓN CORREGIR */
 .btn-correct {
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  background: #6702ff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+
+  width: auto;
+  display: inline-block;
+  padding: 12px 18px;
+
+  background: linear-gradient(to right, #627468, #627468);
   color: white;
-  text-align: center;
+  border: none;
+  border-radius: 25px;
+
+  font-weight: bold;
 }
 
 /* RESULTADO */
@@ -110,7 +195,7 @@ footer {
   margin-top: 40px;
   font-size: 14px;
   color: #f2f2f2;
-  background: #7359f3;
+  background: linear-gradient(90deg, #0f2f1f, #1f4f3a);
   padding: 10px;
-  border-top: 1px solid #9000ff;
+  border-top: 3px solid #000000;
 }
