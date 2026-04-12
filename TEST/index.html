@@ -601,16 +601,32 @@
       );
       const [corregido, setCorregido] = React.useState(false);
 
+      const totalPreguntas = preguntasMezcladas.length;
+      const valorPregunta = 10 / totalPreguntas;
+
       const seleccionar = (pIndex, rIndex) => {
         const copia = [...respuestas];
         copia[pIndex] = rIndex;
         setRespuestas(copia);
       };
 
-      const puntaje = respuestas.reduce((acc, r, i) => {
+      const aciertos = respuestas.reduce((acc, r, i) => {
         if (r === preguntasMezcladas[i].correcta) return acc + 1;
         return acc;
       }, 0);
+
+      const fallos = respuestas.reduce((acc, r, i) => {
+        if (r !== null && r !== preguntasMezcladas[i].correcta) return acc + 1;
+        return acc;
+      }, 0);
+
+      const noRespondidas = respuestas.filter(r => r === null).length;
+
+      const penalizacion = Math.floor(fallos / 3) * valorPregunta;
+
+      const puntaje = Math.max(0, aciertos * valorPregunta - penalizacion);
+
+      const [mostrarResultado, setMostrarResultado] = React.useState(false);
 
       return (
         <div className="test-container">
@@ -640,14 +656,27 @@
           ))}
 
           <div className="result-section">
-            <button className="btn-correct" onClick={() => setCorregido(true)}>
+            <button className="btn-correct" onClick={() => {
+              setCorregido(true);
+              setMostrarResultado(true);
+            }}>
               Finalizar
             </button>
 
-            {corregido && (
-              <p className="result-text">
-                Resultado: {puntaje} / {preguntasMezcladas.length}
-              </p>
+            {mostrarResultado && (
+              <div className="modal-overlay" onClick={() => setMostrarResultado(false)}>
+                <div className="modal" onClick={(e) => e.stopPropagation()}>
+                  <h2>Resultado final</h2>
+                  <p><strong>Nota:</strong> {puntaje.toFixed(2)} / 10</p>
+                  <p><strong>Acertadas:</strong> {aciertos}</p>
+                  <p><strong>Erróneas:</strong> {fallos}</p>
+                  <p><strong>En blanco:</strong> {noRespondidas}</p>
+
+                  <button className="btn-close-modal" onClick={() => setMostrarResultado(false)}>
+                    Cerrar
+                  </button>
+                </div>
+              </div>
             )}
           </div>
         </div>
@@ -658,7 +687,7 @@
     ReactDOM.createRoot(document.getElementById("root")).render(<TestInteractivo />);
   </script>
   <footer>
-    <p>Creado por <b>Eduardo Rípodas</b> para Lenguaje de Marcas</p>
+    <p>Creado por <b>E.R.</b> para Lenguaje de Marcas</p>
 
   </footer>
 </body>
